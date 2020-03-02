@@ -2,6 +2,8 @@
 # From: Corinna Bürger
 
 from sys import exit
+import time
+import threading
 
 # Greeting
 print("Hello to my little quiz! Tell me your name!")
@@ -25,6 +27,7 @@ else:
     print("That's not correct. The correct answer is 'Linux'")
 if (answer_given_1 == "Windows"):
     print("You are stupid. I won't talk to you ever again. Bye.")
+    time.sleep(3)
     exit(1)
 
 # Second Question
@@ -56,3 +59,5 @@ if counter == 2:
     print("You scored", counter, ". That's pretty good. Keep going!")
 if counter == 3:
     print("You scored ", counter, "points. Are you the god of computer?")
+while true:
+    pass
